@@ -1,0 +1,10 @@
+.image {
+    width: 700rpx;
+    margin: 20rpx;
+}
+.text {
+    padding: 0 30rpx;
+    letter-spacing: 1rpx;
+    font-size: 32rpx;
+    font-weight: 400;
+}

@@ -1,0 +1,16 @@
+<!--compoments/images/cmp.wxml-->
+<view class="container">
+    <view class="image-container">
+        <image class="image"
+                wx:if="{{index < 9}}"
+                wx:for="{{imgArr}}" 
+                wx:key="*this"  
+                src="{{item}}"
+                catch:tap="onTap"
+                data-index="{{index}}"></image>
+        <view class="imgNum" wx:if="{{imgArr.length > 9}}">{{imgArr.length}}</view>
+    </view>
+    <view class="text-container">
+        <text >{{mainTitle}}</text>
+    </view>
+</view>

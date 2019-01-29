@@ -1,0 +1,8 @@
+<!--compoments/articleList/cmp.wxml-->
+<view class="container">
+    
+    <d-article class='article' wx:for="{{articleList}}" article-detail='{{item}}' wx:key="{{artId}}"/>
+    <d-loading hidden='{{!loading}}' class="loading"/>
+    <text wx:if="{{noMoreData}}" class="noMore">没有更多了~</text>
+</view>
+ 

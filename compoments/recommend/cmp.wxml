@@ -1,0 +1,9 @@
+<!--compoments/recommend/cmp.wxml-->
+<view class="container">
+    <text class="big-title">{{maganizeId === 0 ? date : maganizeTypeArr[maganizeId]}}</text>
+    <text class="title">{{recommend.title}}</text>
+    <image class="image" src="{{recommend.imgSrc || ''}}" wx:if="{{recommend.imgSrc}}"/>
+    <view class="skeleton" hidden="{{recommend.imgSrc}}">
+        <view class="loading"></view>
+    </view>
+</view>

@@ -1,0 +1,22 @@
+/* compoments/articleList/cmp.wxss */
+.container {
+    background-color: rgba(0, 0, 0, .1);
+    padding: 20rpx;
+}
+.article {
+    display: block;
+    margin-top: 30rpx;
+}
+.noMore {
+    display:inline-block;
+    width: 100%;
+    height: 100rpx;
+    font-size: 32rpx;
+    background-color: transparent;
+    text-align: center;
+    line-height: 100rpx;
+}
+.loading {
+    display:block;
+    margin: 30rpx 315rpx;
+}

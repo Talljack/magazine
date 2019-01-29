@@ -1,0 +1,36 @@
+/* pages/catelog/catelog.wxss */
+.container {
+    padding: 0 20rpx;
+}
+.tag-title {
+    margin-top: 20rpx;
+    font-size: 40rpx;
+}
+.tag-list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28rpx;
+}
+.tag {
+    margin-top: 40rpx;
+}
+.order {
+    margin-right: 20rpx;
+}
+
+.mark-container {
+    width: 700rpx;
+    margin: 0 auto;
+}
+.mark-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 40rpx 0;
+}
+.my-maganize {
+    font-size: 40rpx;
+}
+.manage-maganize {
+    font-size: 30rpx;
+}

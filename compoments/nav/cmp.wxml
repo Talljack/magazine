@@ -1,0 +1,13 @@
+<scroll-view class="container" 
+            scroll-x="{{true}}" 
+            scroll-into-view="{{maganizeId}}"
+            scroll-with-animation="{{true}}">
+    <text id="{{'maganize' + index}}"
+          class="type {{maganizeIndex === index ? 'active' :''}}"
+          wx:for="{{maganizeTypeArr}}" 
+          bind:tap="onTap"
+          data-index="{{index}}"
+          wx:key="*this">
+          {{item}}
+    </text>
+</scroll-view>

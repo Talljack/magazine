@@ -1,0 +1,35 @@
+/* compoments/images/cmp.wxss */
+.container {
+    padding: 0 20rpx;
+    width: 700rpx;
+}
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 700rpx;
+    flex-wrap: wrap;
+    position: relative;
+}
+.image-container .image {
+    width: 31%;
+    height: 31%;
+}
+.imgNum {
+    position: absolute;
+    right: 90rpx;
+    bottom: 90rpx;
+    padding: 10rpx 20rpx;
+    border: 1px solid #000;
+    font-size: 24rpx;
+    background-color: transparent;
+}
+.text-container {
+    margin-top: 20rpx;
+    width: 100%;
+}
+.text-container > text {
+    font-size: 28rpx;
+    font-weight: 300;
+    letter-spacing: 2rpx;
+}

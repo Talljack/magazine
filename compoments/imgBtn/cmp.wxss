@@ -1,0 +1,5 @@
+/* compoments/imgBtn/cmp.wxss */
+.container {
+    padding: 0;
+    border: none;
+}

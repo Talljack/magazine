@@ -1,0 +1,52 @@
+/* compoments/showVideo/cmp.wxss */
+/* compoments/video/cmp.wxss */
+.video {
+    width: 700rpx;
+    height: 400rpx;
+}
+.containerBox {
+    width: 700rpx;
+    height: 400rpx;
+    position: relative;
+}
+.containerBox .poster {
+    width: 700rpx;
+    height: 400rpx;
+}
+.containerBox .controler {
+    width: 100rpx;
+    height: 100rpx;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -50rpx;
+    margin-left: -50rpx;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.controler .playImg {
+    width: 30rpx;
+    height: 30rpx;
+    margin-top: 20rpx;
+}
+.controler .duration {
+    font-size: 24rpx;
+    color: #fff;
+}
+.mainTitle {
+    margin-top: 20rpx;
+    font-size: 32rpx;
+    padding: 20rpx;
+    font-weight: 400;
+}
+.mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 750rpx;
+    height: 1334rpx;
+    background-color: rgba(0, 0, 0, .3);
+}

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "d-tag": "/compoments/tag/cmp"
+  }
+}

@@ -1,0 +1,18 @@
+<!--compoments/showVideo/cmp.wxml-->
+<view class="container">
+    <video class="video" 
+           hidden = '{{showPoster}}'
+           id = '{{videoId}}'
+           bindended='onVideoEnd'
+           src='{{videoSrc}}'/>
+    <view class="containerBox" hidden = '{{!showPoster}}'>
+        <image class="poster" src='{{posterSrc}}'/>
+        <view class="controler" catch:tap="changePlay">
+            <image class="playImg" src="/image/icon/play.png" />
+            <text class="duration">{{duration}}</text>
+        </view>
+    </view>
+    <text class="mainTitle">{{mainTitle}}</text>
+    <view class="mask" hidden = '{{showPoster}}' catch:tap=
+    'changeStop'></view>
+</view>

@@ -1,0 +1,24 @@
+<!--pages/catelog/catelog.wxml-->
+<view class="container">
+    <d-search value="{{searchWord}}"/>
+    <view class="mark-container">
+        <view class="mark-control">
+            <view class="my-maganize">我的杂志</view>
+            <view class="manage-maganize">管理杂志</view>
+        </view>
+        <d-tagList mark-list="{{myTagList}}">
+            <d-add slot="before" style="margin-right: 20rpx;"/>
+        </d-tagList>
+    </view>
+    <view class="footer">
+        <view wx:for="{{tagInfoList}}" wx:for-item="tagInfoItem" wx:key="title">
+            <view class="tag-title" >{{tagInfoItem.title}} ></view>
+            <view >
+                <view class="tag-list" wx:for="{{tagInfoItem.tagList}}" wx:key="tagId">
+                    <text class="tag" ># {{item.tag}}</text>
+                    <d-subscribe tag="{{item.tag}}" tag-id="{{item.tagId}}" bind:tap="onSubscribe"/>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

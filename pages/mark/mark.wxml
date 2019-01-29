@@ -1,0 +1,28 @@
+<!--pages/mark/mark.wxml-->
+
+<view class="container">
+    <view class="user-container">
+       <view class="user-info">
+           <view class="user-name">{{userInfo.nickName}}</view>
+           <view class="user-avatar">
+               <image wx:if="{{authorized}}" src="{{userInfo.avatarUrl}}" />
+               <!-- <button wx:else class="get-user-info" open-type='getUserInfo' bindgetuserinfo="onGetUserInfo">
+                   <image src="/image/login.jpg" />
+               </button> -->
+               <!-- <d-imgBtn open-type="getUserInfo"/> -->
+               <d-imgBtn open-type="getUserInfo" bind:getuserinfo="onGetUserInfo">
+                    <image src="/image/login.jpg" slot="img"/>
+               </d-imgBtn>
+           </view>
+       </view>
+    </view>
+
+    <view class="share">
+        <!-- <image src="/image/icon/Icon_relay.png" /> -->
+        <!-- <d-imgBtn open-type="getUserInfo"/> -->
+        <d-imgBtn class="userinfo" open-type="share">
+            <image src="/image/icon/Icon_relay.png" slot="img"/>
+        </d-imgBtn>
+    </view>
+    <d-articleList article-list="{{likeList}}"/>
+</view>

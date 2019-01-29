@@ -1,0 +1,46 @@
+/* compoments/article/cmp.wxss */
+.container {
+    background-color: #fff;
+}
+.userInfo {
+    padding: 20rpx;
+}
+
+.image {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    margin-right: 20rpx;
+    vertical-align: middle;
+}
+.info {
+    font-size: 28rpx;
+    color: #666;
+}
+.about {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20rpx;
+    margin-top: 10rpx;
+}
+.showMore {
+    display: flex;
+}
+.box {
+    display: block;
+    margin-left: 25rpx;
+}
+.img-btn {
+    width: 50rpx;
+    height: 50rpx;
+}
+.img-btn button {
+    padding: 0;
+    border: none;
+}
+.img-btn image {
+    width: 50rpx;
+    height: 50rpx;
+    margin-bottom: 10rpx;
+}

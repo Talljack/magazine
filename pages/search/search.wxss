@@ -1,0 +1,35 @@
+/* pages/search/search.wxss */
+.recommend-container {
+    width: 700rpx;
+    margin: 70rpx auto;
+    padding-top: 70rpx;
+    padding-bottom: 70rpx;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000; 
+}
+.text {
+    font-size: 50rpx;
+    margin-bottom: 50rpx;
+}
+.recommend-list {
+    font-size: 24rpx;
+}
+.recommend {
+    font-size: 32rpx;
+    padding-left: 20rpx;
+    letter-spacing: 2rpx;
+    margin: 10rpx 0;
+}
+.loading-container {
+    width: 750rpx;
+    height: 1054rpx;
+    position: fixed;
+    background-color: #fff;
+}
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -30rpx;
+    margin-top: -30rpx;
+}

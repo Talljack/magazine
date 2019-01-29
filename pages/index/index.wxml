@@ -1,0 +1,10 @@
+<d-nav class="nav" catch:nav="onNav"/>
+<d-recommend recommend="{{recommend}}" maganize-id='{{maganizeId}}' class="recommend"/>
+<d-tagList mark-list="{{markList}}">
+    <d-add slot="before" class="add" wx:if="{{maganizeId === 0}}"/>
+    <view slot="after" class="to-catelog" catch:tap="onCatelog" wx:if="{{maganizeId === 0}}">···</view>
+</d-tagList>
+<d-articleList article-list='{{articleList}}' more='{{getMore}}' maganized-id = '{{maganizeId}}'/>
+<view class="loading-container" wx:if="{{loading}}">
+    <d-loading  class="loading"/>
+</view>
